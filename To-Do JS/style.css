@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.container h1{
+    font-size: 4rem;
+    padding-bottom: 2rem;
+}
+
+.container .box .input{
+    width: 200px;
+    padding: 8px 6px;
+    border: none;
+    border-radius: 5px;
+    background: lightblue;
+    color: black;
+}
+
+.btn1{
+    padding: 6px 6px;
+    border-radius: 5px;
+    border: 2px solid green;
+    background: lightgreen;
+    transition: 0.5s ease-in-out;
+}
+
+.btn1:hover{
+    background: lightblue;
+}
+
+.btn2{
+    padding: 6px 6px;
+    border-radius: 5px;
+    border: 2px solid red;
+    background: lightsalmon;
+}
+
+.todo-container{
+    margin-top: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-list{
+    align-items: center;
+    list-style: none;
+}
+
+.todo{
+    background: yellow;
+    margin: 1rem;
+    width: 100%;
+    padding: 7px 5px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.check-btn{
+    padding: 10px;
+    background: green;
+    color: white;
+    border: none;
+    margin-right: 5px;
+}
+
+.false-btn{
+    padding: 10px;
+    background: red;
+    color: white;
+    border: none;
+}
+
+.check-btn:hover{
+    opacity: 0.6;
+}
+
+.false-btn:hover{
+    opacity: 0.6;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.filter-todo{
+    width: 150px;
+    padding: 5px 0;
+    border: none;
+    overflow: hidden;
+}
